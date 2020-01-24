@@ -1,0 +1,13 @@
+// variables - colores
+$azul : #6495ED;
+$ocre :#FAEBD7;
+$ocreFuerte : #DEB887;
+$negro: #000;
+$blanco: white;
+
+@import "small";
+@media only screen and (min-width: 80em) /*== 1280px*/
+{
+    @import "large";
+}
+/*sdsd ssss*/
