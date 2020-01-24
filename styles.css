@@ -23,15 +23,30 @@ a {
   text-decoration: none;
 }
 
-p {
+section.post-content p {
   font-size: 20px;
   font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  padding: 10px 0;
 }
 
 header {
   background-color: #6495ED;
   padding: 40px 25px;
   text-align: right;
+}
+
+section.post-content h2 {
+  text-align: left;
+  padding: 10px 0;
+  padding-bottom: 90px;
+}
+
+main article {
+  padding: 25px;
+  background-color: white;
+  text-align: center;
+  margin-top: 20px;
 }
 
 header h1 a {
@@ -56,57 +71,33 @@ main {
   padding: 15px;
   background-color: #DEB887;
 }
-
-article {
-  padding: 25px;
-  background-color: white;
-  text-align: center;
-  margin-top: 20px;
+main article .post-date {
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #818181;
 }
 
 img {
   width: 70%;
 }
 
-.post-date,
-section.post-content h2,
-section.post-content p {
-  text-align: left;
-}
-
-.post-date {
-  font-family: Helvetica, Arial, sans-serif;
-  color: #818181;
-}
-
-section.post-content h2,
-section.post-content p {
-  padding: 10px 0;
-}
-
-section .post-content h2 {
-  padding-bottom: 90px;
-}
-
-section.post-content p a,
-section.post-content p a:visited {
+section.post-content h2 a:active,
+section.post-content h2 a:hover {
   color: #6495ED;
+  text-decoration: underline;
 }
-
+section.post-content h2 h2 a,
+section.post-content h2 h2 a:visited {
+  color: black;
+}
 section.post-content p a:active,
 section.post-content p a:hover {
   color: #FAEBD7;
   text-decoration: underline;
 }
-
-section .post-content h2 a:active,
-section .post-content h2 a:hover {
+section.post-content p a,
+section.post-content p a:visited {
   color: #6495ED;
-  text-decoration: underline;
-}
-section .post-content h2 h2 a,
-section .post-content h2 h2 a:visited {
-  color: black;
 }
 
 @media only screen and (min-width: 80em) {
@@ -121,8 +112,7 @@ section .post-content h2 h2 a:visited {
   main {
     padding: 100px;
   }
-
-  article {
+  main article {
     padding: 100px;
     margin-top: 0px;
     margin-bottom: 70px;
