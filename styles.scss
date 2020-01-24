@@ -1,9 +1,43 @@
+/*
+    Edit:   Sergio Bravo;
+*/
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap");
+
 // variables - colores
 $azul : #6495ED;
 $ocre :#FAEBD7;
 $ocreFuerte : #DEB887;
 $negro: black;
 $blanco: white;
+
+//mixins
+%parrafo
+{
+	font-size: 20px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: left;
+	padding: 10px 0;
+}
+
+%principal {
+	background-color: $azul;
+	padding: 40px 25px;
+	text-align: right;
+}
+
+%h2cabecera{
+	text-align: left;
+	padding: 10px 0;
+	padding-bottom: 90px;
+}
+
+%article
+{
+	padding: 25px;
+	background-color: $blanco;
+	text-align: center;
+	margin-top: 20px;
+}
 
 @import "small";
 @media only screen and (min-width: 80em) /*== 1280px*/

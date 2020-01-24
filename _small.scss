@@ -1,16 +1,15 @@
-/*
-    Edit:   Sergio Bravo;
-*/
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap');
-
 *
 {
 	margin: 0;
 	padding: 0;
 }
-h1,h2,h3,h4,h5,h6
+@mixin cabecera()
 {
 	font-family: 'Lora', serif;
+}
+h1,h2,h3,h4,h5,h6
+{
+	@include cabecera;
 }
 
 hr
@@ -26,35 +25,7 @@ ul
 a
 {
 	text-decoration: none;
-}
-
-%parrafo
-{
-	font-size: 20px;
-	font-family: Helvetica, Arial, sans-serif;
-	text-align: left;
-	padding: 10px 0;
-}
-
-%principal {
-	background-color: $azul;
-	padding: 40px 25px;
-	text-align: right;
-}
-
-%h2cabecera{
-	text-align: left;
-	padding: 10px 0;
-	padding-bottom: 90px;
-}
-
-%article
-{
-	padding: 25px;
-	background-color: $blanco;
-	text-align: center;
-	margin-top: 20px;
-}
+} 
 
 header 
 {
