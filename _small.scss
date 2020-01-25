@@ -61,6 +61,13 @@ header
 	}
 }
 
+.multiplicador
+{
+	background-color: $negro;
+	width: calcular($a,$b:1);
+	height: calcular($a,2);
+}
+
 main
 {
 	padding: 15px;
@@ -77,9 +84,12 @@ main
 	}
 }
 
-img
+figure
 {
-	width: 70%;
+	img
+	{
+		width: tmanoImg();
+	}
 }
 
 section.post-content

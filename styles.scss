@@ -11,6 +11,19 @@ $negro: black;
 $blanco: white;
 
 //mixins
+@function tmanoImg()
+{
+	@return 60%;
+}
+$a : 230;
+@function calcular($a, $b:2)
+{
+	@return ($a * $b) + px;
+}
+
+
+   
+
 %parrafo
 {
 	font-size: 20px;
